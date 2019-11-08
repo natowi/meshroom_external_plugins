@@ -5,5 +5,5 @@ Tested on Windows only
 
 List of supported software packages:
 
-- InstantMeshes (WIP)
-- Simplify (Fast-Quadric-Mesh-Simplification)
+- InstantMeshes (WIP) https://github.com/wjakob/instant-meshes
+- Simplify (Fast-Quadric-Mesh-Simplification) https://github.com/sp4cerat/Fast-Quadric-Mesh-Simplification
