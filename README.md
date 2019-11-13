@@ -10,6 +10,11 @@ Tested on Windows only
 - InstantMeshes (WIP) https://github.com/wjakob/instant-meshes
 - Simplify (Fast-Quadric-Mesh-Simplification) https://github.com/sp4cerat/Fast-Quadric-Mesh-Simplification
 
+**New dev node**
+depth mask node
+https://github.com/alicevision/meshroom/pull/641
+https://github.com/alicevision/meshroom/pull/641/files
+
 **How to use the plugins:**
 
 - download the meshroom repository zip from https://github.com/alicevision/meshroom/
