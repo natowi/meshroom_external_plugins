@@ -11,8 +11,9 @@ Tested on Windows only
 - Simplify (Fast-Quadric-Mesh-Simplification) https://github.com/sp4cerat/Fast-Quadric-Mesh-Simplification
 
 **New dev node**
-depth mask node
+
 https://github.com/alicevision/meshroom/pull/641
+
 https://github.com/alicevision/meshroom/pull/641/files
 
 **How to use the plugins:**
@@ -22,5 +23,5 @@ https://github.com/alicevision/meshroom/pull/641/files
 - download the pre-compiled meshroom zip from https://github.com/alicevision/meshroom/releases
 - paste the pre-compiled aliceVision and qtPlugins folders and the provided Meshroom.bat in the meshroom folder and use Meshroom.bat (or cli) to start the meshroom gui (*or use your own compiled versions)
 - when Meshroom is closed, you can copy the plugin files in the respective folders
-- plugin.py in meshroom\nodes\aliceVision 
-- softwareA.exe/softwareB.py/softwareC.bat in aliceVision\bin
+- plugin.py in meshroom\nodes\aliceVision (for the MR GUI)
+- place the new software (.exe, .py or .bat) in aliceVision\bin (this is for the software package that is called via the MR GUI)
