@@ -32,3 +32,13 @@ class InstantMeshes(desc.CommandLineNode):
             value='',
             uid=[0],
             ),
+
+    outputs = [
+        desc.File(
+            name="output",
+            label="Output Masks",
+            description="Output Masks folder (monochrome PNG)",
+            value=desc.Node.internalFolder + 'img.png', #note: image name = input
+            uid=[],
+            ),
+    ]
