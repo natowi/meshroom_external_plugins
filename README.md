@@ -16,6 +16,8 @@ https://github.com/alicevision/meshroom/pull/641
 
 https://github.com/alicevision/meshroom/pull/641/files
 
+**WIP: batch image masking node**
+
 **How to use the plugins:**
 
 - download the meshroom repository zip from https://github.com/alicevision/meshroom/
