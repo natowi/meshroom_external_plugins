@@ -18,7 +18,7 @@ __version__ = "3.0"
 from meshroom.core import desc
 
 
-class InstantMeshes(desc.CommandLineNode):
+class ImageMasking(desc.CommandLineNode):
     commandLine = 'alicevision_......'
 
     cpu = desc.Level.NORMAL
