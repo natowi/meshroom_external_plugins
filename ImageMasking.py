@@ -11,6 +11,8 @@
 #
 # Note: not all options are implemented yet
 
+# This node will create image masks for the DepthMapMask node (also wip)
+
 __version__ = "3.0"
 
 from meshroom.core import desc
