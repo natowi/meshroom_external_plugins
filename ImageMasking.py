@@ -1,7 +1,7 @@
-# Instant Meshes node plugin for Meshroom
+# ImageMasking node plugin for Meshroom
 # 
-# Pre-compiled binaries for Instant Meshes can be downloaded from https://github.com/wjakob/instant-meshes
-# Instant Meshes, created by  Wenzel Jakob, Marco Tarini, Daniele Panozzo, Olga Sorkine-Hornung
+# Pre-compiled binaries for .... can be downloaded from ....
+# ...., created by  ....
 #
 # Meshroom plugin by natowi (https://github.com/natowi) 11.2019
 # Meshroom plugin license: Mozilla Public License Version 2.0
