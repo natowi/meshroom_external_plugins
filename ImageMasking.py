@@ -17,12 +17,15 @@ __version__ = "3.0"
 
 from meshroom.core import desc
 
+# name of the node in Meshroom + call CL with parameters
 
 class ImageMasking(desc.CommandLineNode):
     commandLine = 'alicevision_...... {input} *.* {...params} {output} *.png'
 
     cpu = desc.Level.NORMAL
     ram = desc.Level.NORMAL
+
+    #define node inputs
 
     inputs = [
         desc.File(
@@ -32,15 +35,17 @@ class ImageMasking(desc.CommandLineNode):
             value='',
             uid=[0],
             ),
-        
-        #support for: black/white/green/* background, background pattern
+    ]
+    
+# support for: black/white/green/* background, background pattern
 
+# define node outputs
     outputs = [
         desc.File(
             name="output",
             label="Output Masks",
             description="Output Masks folder (monochrome PNG)",
-            value=desc.Node.internalFolder + '*.png', #note: image name = input
+            value=desc.Node.internalFolder + '*.png', # note: image name = input
             uid=[],
             ),
     ]
