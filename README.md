@@ -28,3 +28,17 @@ https://github.com/alicevision/meshroom/pull/641/files
 - when Meshroom is closed, you can copy the plugin files in the respective folders
 - plugin.py in meshroom\nodes\aliceVision (for the MR GUI)
 - place the new software (.exe, .py or .bat) in aliceVision\bin (this is for the software package that is called via the MR GUI)
+
+
+
+----
+**Ideas**
+
+foreground extraction algorithm
+
+http://opensource.graphics/how-to-code-a-nice-user-guided-foreground-extraction-algorithm/
+
+http://opensource.graphics/how-to-code-a-nice-user-guided-foreground-extraction-algorithm-addendum/
+
+-> generate masks
+--> it might be possible to use the masks to filter the keypoints, and use the keypoints to detect the object of interest in multiple images
