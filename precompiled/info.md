@@ -16,6 +16,5 @@ Meshroom\lib\meshroom\nodes\aliceVision
 
 How to use this plugin:
 
-PrepareDenseScene2 (jpg)->ImageMasking->MaskFolder of DepthMaskFilter
 
 Note: at the moment ImageMasking can only create masks for images with white background (as it is the case for images captured on a turntable in a light box/studio setting)
