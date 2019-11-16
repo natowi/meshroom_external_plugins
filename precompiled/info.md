@@ -11,3 +11,9 @@ Meshroom\lib\meshroom\nodes\aliceVision
 - Meshroom plugin license: Mozilla Public License Version 2.0
 - Plugin folder (pyc): Meshroom\lib\meshroom\nodes\aliceVision
 - Requires mogrify.exe in aliceVision\bin
+
+How to use this plugin:
+
+PrepareDenseScene2 (jpg)->ImageMasking->MaskFolder of DepthMaskFilter
+
+Note: at the moment ImageMasking can only create masks for images with white background (as it is the case for images captured on a turntable in a light box/studio setting)
