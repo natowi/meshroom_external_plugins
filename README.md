@@ -9,14 +9,14 @@ Tested on Windows only
 
 - InstantMeshes (WIP) https://github.com/wjakob/instant-meshes
 - Simplify (Fast-Quadric-Mesh-Simplification) https://github.com/sp4cerat/Fast-Quadric-Mesh-Simplification
+- **ImageMasking** Plugin based on ImageMagick (mogrify) https://github.com/ImageMagick/ImageMagick
+  This plugin can create masks for images with white background. ToDo: support for black/green bg, structured bg substraction
 
 **New dev node**
 
 https://github.com/alicevision/meshroom/pull/641
 
 https://github.com/alicevision/meshroom/pull/641/files
-
-**WIP: batch image masking node**
 
 **How to use the plugins:**
 
