@@ -1,17 +1,17 @@
 # ImageMasking node plugin for Meshroom
 # 
-# Pre-compiled binaries for .... can be downloaded from ....
-# ...., created by  ....
+# Pre-compiled binaries for imagemagick can be downloaded from https://imagemagick.org/script/download.php
+# ImageMagick on github https://github.com/ImageMagick/ImageMagick
+# ImageMagick license https://github.com/ImageMagick/ImageMagick/blob/master/LICENSE
 #
 # Meshroom plugin by natowi (https://github.com/natowi) 11.2019
 # Meshroom plugin license: Mozilla Public License Version 2.0
 # Plugin folder: meshroom\nodes\aliceVision
-# Requires .... in aliceVision\bin
-# Requires uncompiled Meshroom and pre-compiled alicevision
+# Requires mogrify.exe in aliceVision\bin
+# Requires uncompiled Meshroom and pre-compiled AliceVision
 #
-# Note: not all options are implemented yet
-
-# This node will create image masks for the DepthMapMask node (also wip)
+#
+# Node for ImageMasking to use with the DepthMapMask node
 
 __version__ = "3.0"
 
@@ -20,12 +20,12 @@ from meshroom.core import desc
 # name of the node in Meshroom + call CL with parameters
 
 class ImageMasking(desc.CommandLineNode):
-    commandLine = 'alicevision_...... {input} *.* {...params} {output} *.png'
+    commandLine = 'mogrify -format png -path {outputValue} -type Grayscale -negate -fill black -fuzz {fuzzValue}% +opaque "#ffffff" -blur {radiusValue}x{sigmaValue} -type Bilevel -depth 1 {inputValue}\*jpg'
 
     cpu = desc.Level.NORMAL
     ram = desc.Level.NORMAL
 
-    #define node inputs
+#define node inputs, use PrepareDenseScene node to convert the input images to png
 
     inputs = [
         desc.File(
@@ -35,9 +35,40 @@ class ImageMasking(desc.CommandLineNode):
             value='',
             uid=[0],
             ),
-    ]
     
-# support for: black/white/green/* background, background pattern
+    
+# wip black/white/green/* background, background pattern
+	
+		desc.IntParam(
+			name='fuzz',
+			label='fuzz',
+			description='',
+			value=60,
+			range=(0, 100, 1),
+			uid=[0],
+			),
+
+# Documentation: http://www.imagemagick.org/Usage/blur/
+	
+		desc.IntParam(
+			name='radius',
+			label='Blur radius',
+			description='larger value=larger blur radius, 0=auto value (default)',
+			value=0,
+			range=(0, 100, 1),
+			uid=[0],
+			),
+	
+		desc.FloatParam(
+			name='sigma',
+			label='Blur Sigma',
+			description='blur intensity',
+			value=6,
+			range=(0.0, 100.0, 0.01),
+			uid=[0],
+			),
+	
+	]
 
 # define node outputs
     outputs = [
@@ -45,7 +76,7 @@ class ImageMasking(desc.CommandLineNode):
             name="output",
             label="Output Masks",
             description="Output Masks folder (monochrome PNG)",
-            value=desc.Node.internalFolder + '*.png', # note: image name = input
+            value=desc.Node.internalFolder,
             uid=[],
             ),
     ]
