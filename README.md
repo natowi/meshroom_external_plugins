@@ -11,6 +11,7 @@ Tested on Windows only
 - Simplify (Fast-Quadric-Mesh-Simplification) https://github.com/sp4cerat/Fast-Quadric-Mesh-Simplification
 - **ImageMasking** Plugin based on ImageMagick (mogrify) https://github.com/ImageMagick/ImageMagick
   This plugin can create masks for images with white background. ToDo: support for black/green bg, structured bg substraction
+  **Note** this is WIP has some bugs
 
 **DepthMapMask**
 
