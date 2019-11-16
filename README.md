@@ -12,7 +12,7 @@ Tested on Windows only
 - **ImageMasking** Plugin based on ImageMagick (mogrify) https://github.com/ImageMagick/ImageMagick
   This plugin can create masks for images with white background. ToDo: support for black/green bg, structured bg substraction
 
-**New dev node**
+**DepthMapMask**
 
 https://github.com/alicevision/meshroom/pull/641
 
