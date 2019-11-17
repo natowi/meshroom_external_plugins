@@ -20,7 +20,7 @@ from meshroom.core import desc
 # name of the node in Meshroom + call CL with parameters
 
 class ImageMasking(desc.CommandLineNode):
-    commandLine = 'mogrify -format png -path {outputValue} -type Grayscale -negate -fill black -fuzz {fuzzValue}% +opaque "#ffffff" -blur {radiusValue}x{sigmaValue} -type Bilevel -depth 1 {inputValue}\*jpg'
+    commandLine = 'mogrify -format png -path {outputValue} -type Grayscale -negate -fill black -fuzz {fuzzValue}% +opaque "#ffffff" -blur {radiusValue}x{sigmaValue} -type Bilevel -depth 1 {inputValue}/*jpg'
 
     cpu = desc.Level.NORMAL
     ram = desc.Level.NORMAL
