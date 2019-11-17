@@ -22,10 +22,13 @@ from meshroom.core import desc
 class ImageMasking(desc.CommandLineNode):
     commandLine = 'mogrify -format png -path {outputValue} -type Grayscale -negate -fill black -fuzz {fuzzValue}% +opaque "#ffffff" -blur {radiusValue}x{sigmaValue} -type Bilevel -depth 1 {inputValue}/*jpg'
 
+# Default node parameters demo:
+# mogrify -format png -path "path/to/output/dir" -type Grayscale -negate -fill black -fuzz 9% +opaque "#ffffff" -blur 0x6 -type Bilevel -depth 1 "path/to/input/dir"/*.jpg
+
     cpu = desc.Level.NORMAL
     ram = desc.Level.NORMAL
 
-#define node inputs, use PrepareDenseScene node to convert the input images to png
+#define node inputs, use PrepareDenseScene node to convert the input images to jpg
 
     inputs = [
         desc.File(
