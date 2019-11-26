@@ -42,3 +42,29 @@ http://opensource.graphics/how-to-code-a-nice-user-guided-foreground-extraction-
 
 -> generate masks
 --> it might be possible to use the masks to filter the keypoints, and use the keypoints to detect the object of interest in multiple images
+
+
+----
+
+Software packages with Meshroom addons:
+
+Blender:
+
+https://github.com/tibicen/meshroom2blender
+
+https://github.com/tibicen/meshroom2blender
+
+https://github.com/SBCV/Blender-Addon-Photogrammetry-Importer
+
+https://github.com/s-leger/Meshroom_tracking_for_blender
+
+( https://github.com/Stwend/MeshroomTools )
+
+OrtogOnBlender
+https://www.blendernation.com/2019/07/29/meshroom-on-ortogonblender/
+
+implementation:
+
+https://github.com/cogitas3d/OrtogOnBlender/blob/08bb76a734d2c1e1af9aedcce15fbb1232d2e5ff/FotogrametriaMeshroom.py
+
+
