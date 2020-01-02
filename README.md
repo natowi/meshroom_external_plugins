@@ -19,6 +19,12 @@ https://github.com/alicevision/meshroom/pull/641
 
 https://github.com/alicevision/meshroom/pull/641/files
 
+**MVE support**
+
+https://www.gcc.tu-darmstadt.de/home/proj/mve/
+
+- SfM2MVE convert Mesroom SfM to MVE data file format
+
 **How to use the plugins:**
 
 - download the meshroom repository zip from https://github.com/alicevision/meshroom/
