@@ -2,7 +2,7 @@ __version__ = "1.1"
 
 from meshroom.core import desc
 
-class SfM2MVE(desc.CommandLineNode):
+class Convert2MVE(desc.CommandLineNode):
     commandLine = 'aliceVision_exportMVE2 {allParams}'
 
     inputs = [
