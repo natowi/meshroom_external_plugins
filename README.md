@@ -24,6 +24,7 @@ https://github.com/alicevision/meshroom/pull/641/files
 https://www.gcc.tu-darmstadt.de/home/proj/mve/
 
 - SfM2MVE convert Mesroom SfM to MVE data file format
+- MVEparams.md notes for node implementation
 
 **How to use the plugins:**
 
