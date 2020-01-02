@@ -1,7 +1,7 @@
 Preperation for node implementation
 
 
-**MVE Bundle to Pointset**
+# MVE Bundle to Pointset
 
 This application reads a bundle file and outputs a PLY file with a colored
 point cloud.
@@ -12,7 +12,7 @@ Available options:
 
   -s, --spheres=ARG     Generates a sphere for every point (radius ARG) [0.0]
 
-**MVE Depth Map Reconstruction**
+# MVE Depth Map Reconstruction
 
 **dmrecon.exe [ OPTIONS ] SCENEDIR**
 
@@ -50,7 +50,7 @@ Available options:
   
   --force                Reconstruct and overwrite existing depthmaps
   
-**Floating Scale Surface Reconstruction**
+# Floating Scale Surface Reconstruction
 
 Samples the implicit function defined by the input samples and produces a
 surface mesh. The input samples must have normals and the "values" PLY
@@ -72,7 +72,7 @@ Available options:
   
   --interpolation=ARG      Interpolation: linear, scaling, lsderiv, [cubic]
   
-**MVE Makescene**
+# MVE Makescene
 
 This utility creates MVE scenes by importing from an external SfM software.
 Supported are Noah's Bundler, Photosynther and VisualSfM's compact .nvm
@@ -106,7 +106,7 @@ Available options:
   
   -m, --max-pixels=ARG  Limit image size by iterative half-sizing
   
-**MVE FSSR Mesh to Pointset**
+# MVE FSSR Mesh to Pointset
 
 This app creates a PLY point cloud from the input mesh by stripping the
 connectivity information. Scale values are computed for each vertex as the
@@ -129,7 +129,7 @@ Available options:
   
   -n, --no-normals         Do not compute sample normals
   
-**MVE FSSR Mesh Alignment**
+# MVE FSSR Mesh Alignment
 
 Generates a combined mesh from Stanford or Meshlab alignment data. The
 combined mesh contains all triangulated range images in a global,
@@ -140,7 +140,7 @@ transformation matrix.
 
 meshalign.exe [ OPTS ] ALIGNMENT_FILE [...] OUT_MESH
 
-**MVE FSSR Mesh Cleaning**
+# MVE FSSR Mesh Cleaning
 
 The application cleans degenerated faces resulting from MC-like algorithms.
 Vertices below a confidence threshold and vertices in small isolated
@@ -164,7 +164,7 @@ Available options:
   
   --delete-color           Delete color attribute from mesh
   
-**MVE Mesh Conversion**
+# MVE Mesh Conversion
 
 Converts the mesh given by IN_MESH to the output file OUT_MESH. The format
 of the input and output mesh are detected by extension. Supported file
@@ -177,7 +177,7 @@ Available options:
 
   -n, --normals            Compute vertex normals
   
-**MVE SfM Prebundle**
+# MVE SfM Prebundle
 
 Statistics generator for prebundle files. The graph mode outputs the
 matching graph in Graphviz DOT format.
@@ -188,7 +188,7 @@ Available options:
 
   -g, --graph-mode=ARG   Graph mode: Output matching graph file for DOT
   
-**MVE Scene to Pointset**
+# MVE Scene to Pointset
 
 Generates a pointset from the scene by projecting reconstructed depth
 values in the world coordinate system.
@@ -221,7 +221,7 @@ Available options:
   
   -F, --fssr=ARG           FSSR output, sets -nsc and -di with scale ARG
   
-**MVE Scene Upgrade**
+# MVE Scene Upgrade
 
 This utility upgrades an MVE view, a prebundle file, or an MVE scene to the
 new format. See the Github wiki for more details about the new formats.
@@ -235,7 +235,7 @@ Available options:
 
   -k, --keep-original   Keep original files
   
-**MVE SfM Reconstruction**
+# MVE SfM Reconstruction
 
 Reconstruction of camera parameters for MVE scenes using Structure from
 Motion. Note: The prebundle and the log file are relative to the scene
