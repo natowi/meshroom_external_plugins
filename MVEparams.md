@@ -1,6 +1,6 @@
 Preperation for node implementation
 
-[sfm2mve]->MVE SfM Reconstruction->MVE Depth Map Reconstruction
+[sfm2mve]->MVE SfM Reconstruction->MVE Depth Map Reconstruction->MVE Scene to Pointset
 
 
 # MVE Bundle to Pointset
