@@ -3,6 +3,12 @@
 Place the precompiled .pyc in this folder:
 Meshroom\lib\meshroom\nodes\aliceVision
 
+# Instant Meshes (experimental)
+
+Requires Instant Meshes .exe (named alicevision_InstantMeshes) placed in Meshroom-2019.2.0\aliceVision\bin
+
+Implemented: smooth, crease, rosy, posy
+
 # ImageMasking node plugin for Meshroom
  
 - Pre-compiled binaries for imagemagick can be downloaded from https://imagemagick.org/script/download.php
