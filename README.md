@@ -34,7 +34,7 @@ https://www.gcc.tu-darmstadt.de/home/proj/mve/
 - paste the pre-compiled aliceVision and qtPlugins folders and the provided [Meshroom.bat](./Meshroom.bat) in the meshroom folder and use Meshroom.bat (or cli) to start the meshroom gui (*or use your own compiled versions)
 - when Meshroom is closed, you can copy the plugin files in the respective folders
 - plugin.py in meshroom\nodes\aliceVision (for the MR GUI)
-- place the new software (.exe, .py or .bat) in aliceVision\bin (this is for the software package that is called via the MR GUI)
+- place the new software that is to be run by the node (.exe, .py or .bat) in aliceVision\bin (this is for the software package that is called via the MR GUI)
 
 
 **Software packages with Meshroom addons**
