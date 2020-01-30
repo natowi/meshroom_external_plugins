@@ -24,6 +24,8 @@ To Do:
 
 -k, --knn <count         Point cloud mode: number of adjacent points to consider
 
+......
+
 -d, --deterministic       Prefer (slower) deterministic algorithms
 
 -D, --dominant            Generate a tri/quad dominant mesh instead of a pure tri/quad mesh
