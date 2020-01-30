@@ -8,21 +8,21 @@ Implemented:
 
 To Do:
 
--t, --threads <count>     Number of threads used for parallel computations
+-t, --threads <count     Number of threads used for parallel computations
 
--c, --crease <degrees>    Dihedral angle threshold for creases
+-c, --crease <degrees    Dihedral angle threshold for creases
 
--r, --rosy <number>       Specifies the orientation symmetry type (2, 4, or 6)
+-r, --rosy <number       Specifies the orientation symmetry type (2, 4, or 6)
 
--p, --posy <number>       Specifies the position symmetry type (4 or 6)
+-p, --posy <number       Specifies the position symmetry type (4 or 6)
 
--s, --scale <scale>       Desired world space length of edges in the output
+-s, --scale <scale       Desired world space length of edges in the output
 
--f, --faces <count>       Desired face count of the output mesh
+-f, --faces <count       Desired face count of the output mesh
 
--v, --vertices <count>    Desired vertex count of the output mesh
+-v, --vertices <count    Desired vertex count of the output mesh
 
--k, --knn <count>         Point cloud mode: number of adjacent points to consider
+-k, --knn <count         Point cloud mode: number of adjacent points to consider
 
 -d, --deterministic       Prefer (slower) deterministic algorithms
 
