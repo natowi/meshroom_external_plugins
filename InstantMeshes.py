@@ -17,7 +17,7 @@ from meshroom.core import desc
 
 
 class InstantMeshes(desc.CommandLineNode):
-    commandLine = 'alicevision_InstantMeshes {inputValue} -S {smoothValue} --output {outputValue}'
+    commandLine = 'alicevision_InstantMeshes {inputValue} -S {smoothValue} -c {creaseValue} -r {rosyValue} -p {posyValue} --output {outputValue}'
 
     cpu = desc.Level.NORMAL
     ram = desc.Level.NORMAL
@@ -37,7 +37,31 @@ class InstantMeshes(desc.CommandLineNode):
             value=2,
             range=(0, 100, 1),
             uid=[0],
-            )
+            ),
+		desc.IntParam(
+            name='crease',
+            label='Dihedral angle threshold for creases',
+            description='Dihedral angle threshold for creases in degrees',
+            value=0,
+            range=(0, 360, 1),
+            uid=[0],
+            ),
+		desc.IntParam(
+            name='rosy',
+            label='Orientation symmetry',
+            description='Specifies the orientation symmetry type',
+            value=2,
+            range=(2, 6, 2),
+            uid=[0],
+            ),
+		desc.IntParam(
+            name='posy',
+            label='Position symmetry',
+            description='Specifies the position symmetry type',
+            value=4,
+            range=(4, 6, 2),
+            uid=[0],
+            ),
     ]
 
     outputs = [
