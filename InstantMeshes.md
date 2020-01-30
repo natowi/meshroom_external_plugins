@@ -10,15 +10,7 @@ To Do:
 
 -t, --threads <count>     Number of threads used for parallel computations
 
--d, --deterministic       Prefer (slower) deterministic algorithms
-
 -c, --crease <degrees>    Dihedral angle threshold for creases
-
--D, --dominant            Generate a tri/quad dominant mesh instead of a pure tri/quad mesh
-
--i, --intrinsic           Intrinsic mode (extrinsic is the default)
-
--b, --boundaries          Align to boundaries (only applies when the mesh is not closed)
 
 -r, --rosy <number>       Specifies the orientation symmetry type (2, 4, or 6)
 
@@ -30,8 +22,16 @@ To Do:
 
 -v, --vertices <count>    Desired vertex count of the output mesh
 
--C, --compat              Compatibility mode to load snapshots from old software versions
-
 -k, --knn <count>         Point cloud mode: number of adjacent points to consider
 
+-d, --deterministic       Prefer (slower) deterministic algorithms
+
+-D, --dominant            Generate a tri/quad dominant mesh instead of a pure tri/quad mesh
+
+-i, --intrinsic           Intrinsic mode (extrinsic is the default)
+
+-b, --boundaries          Align to boundaries (only applies when the mesh is not closed)
+
 -F, --fullscreen          Open a full-screen window
+
+
