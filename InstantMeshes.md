@@ -6,15 +6,16 @@ Implemented:
    
 -S, --smooth <iter>       Number of smoothing & ray tracing reprojection steps (default: 2)
 
-To Do:
-
--t, --threads <count     Number of threads used for parallel computations
-
 -c, --crease <degrees    Dihedral angle threshold for creases
 
 -r, --rosy <number       Specifies the orientation symmetry type (2, 4, or 6)
 
 -p, --posy <number       Specifies the position symmetry type (4 or 6)
+
+
+To Do:
+
+-t, --threads <count     Number of threads used for parallel computations
 
 -s, --scale <scale       Desired world space length of edges in the output
 
