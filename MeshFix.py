@@ -1,7 +1,7 @@
-# MeshFix [draft]
+# MeshFix
 # https://github.com/MarcoAttene/MeshFix-V2.1
 
-# MeshFix node plugin for Meshroom
+# MeshFix node plugin for Meshroom  [draft]
 # 
 # Pre-compiled binaries for MeshFix can be downloaded from https://github.com/MarcoAttene/MeshFix-V2.1
 # MeshFix, created by Marco Attene
