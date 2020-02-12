@@ -1,0 +1,71 @@
+# MeshSmith
+# https://github.com/Smithsonian/dpo-meshsmith
+
+# MeshSmith node plugin for Meshroom  [draft]
+# 
+# Pre-compiled binaries for MeshSmith can be downloaded from https://github.com/Smithsonian/dpo-meshsmith
+# MeshSmith, created by Smithsonian
+
+# Meshroom plugin by natowi (https://github.com/natowi) 11.2019
+# Meshroom plugin license: Mozilla Public License Version 2.0
+# Plugin folder: meshroom\nodes\aliceVision
+# Requires MeshSmith.exe and assimp-vc142-mt.dll in aliceVision\bin
+# Requires uncompiled Meshroom and pre-compiled alicevision
+
+# http://assimp.sourceforge.net/main_features_formats.html
+# http://assimp.sourceforge.net/main_features_export.html
+
+# -i, --input arg           Input file name
+# -o, --output arg          Output file name
+# -f, --format arg          Output file format
+
+# -j, --joinvertices        Join identical vertices
+# -n, --stripnormals        Strip normals
+# -u, --striptexcoords      Strip texture coords
+# -z, --swizzle arg         Swizzle coordinates
+# -s, --scale arg           Scale scene by given factor
+#     --flipuv              Flip UV y coordinate
+
+# -a, --diffusemap arg      Diffuse map to be included (gltfx/glbx only)
+# -b, --occlusionmap arg    Occlusion map to be included (gltfx/glbx only)
+# -m, --normalmap arg       Normal map to be included (gltfx/glbx only)
+# -e, --embedmaps           Embed maps (gltfx/glbx only)
+# -t, --objectspacenormals  Use object space normals (gltfx/glbx only)
+# -p, --compress            Compress mesh data using Draco (gltfx/glbx only)
+
+# -v, --verbose             Print log messages to std out
+
+# MeshSmith.exe -i input.obj -o output.ply -f plyb
+# MeshSmith.exe -i mesh.obj -a diffuse.jpg -f gltfx
+# MeshSmith.exe -i mesh.obj -a diffuse.jpg -b occlusion.jpg -m normals.jpg --compress --embedmaps -f glbx
+
+__version__ = "3.0"
+
+from meshroom.core import desc
+
+
+class MeshFix(desc.CommandLineNode):
+    commandLine = 'MeshSmith -i {inputValue} -o {outputValue}'
+
+    cpu = desc.Level.NORMAL
+    ram = desc.Level.NORMAL
+
+    inputs = [
+        desc.File(
+            name="input",
+            label='Input Mesh (OBJ file format).',
+            description='',
+            value='',
+            uid=[0],
+            ),
+]
+
+    outputs = [
+        desc.File(
+            name="output",
+            label="Output mesh",
+            description="Output mesh (OBJ file format).",
+            value=desc.Node.internalFolder + 'mesh_fixed.stl',
+            uid=[],
+            ),
+    ]
