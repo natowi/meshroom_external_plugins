@@ -9,7 +9,7 @@
 # Meshroom plugin by natowi (https://github.com/natowi) 11.2019
 # Meshroom plugin license: Mozilla Public License Version 2.0
 # Plugin folder: meshroom\nodes\aliceVision
-# Requires Instant Meshes (named alicevision_InstantMeshes) in aliceVision\bin
+# Requires MeshFix.exe in aliceVision\bin
 # Requires uncompiled Meshroom and pre-compiled alicevision
 
 # Option '-a' = joins multiple open components before starting
