@@ -44,7 +44,7 @@ __version__ = "3.0"
 from meshroom.core import desc
 
 
-class MeshFix(desc.CommandLineNode):
+class MeshFileConversion(desc.CommandLineNode):
     commandLine = 'MeshSmith -i {inputValue} -o {outputValue}'
 
     cpu = desc.Level.NORMAL
