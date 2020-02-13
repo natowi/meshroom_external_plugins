@@ -28,13 +28,13 @@ https://www.gcc.tu-darmstadt.de/home/proj/mve/
 
 **How to use the plugins:**
 
-- download the meshroom repository zip from https://github.com/alicevision/meshroom/
-- install requirements: (cli-> navigate in meshroom-develop folder) ´´pip install -r requirements.txt´´
-- download the pre-compiled meshroom zip from https://github.com/alicevision/meshroom/releases
-- paste the pre-compiled aliceVision and qtPlugins folders and the provided [Meshroom.bat](./Meshroom.bat) in the meshroom folder and use Meshroom.bat (or cli) to start the meshroom gui (*or use your own compiled versions)
-- when Meshroom is closed, you can copy the plugin files in the respective folders
-- plugin.py in meshroom\nodes\aliceVision (for the MR GUI)
-- place the new software that is to be run by the node (.exe, .py or .bat) in aliceVision\bin (this is for the software package that is called via the MR GUI)
+The binary windows distribution of Meshroom can use uncompiled python source (*.py) files.
+(It compiles these files on-the-fly and creates a _pycache_ folder.)
+So the only two things you need to do is:
+- copy the executable (InstantMeshes.exe) into aliceVision/bin folder and rename to 'external_instantMeshes.exe'
+- put the python file (InstantMeshes.py) into the libs/meshroom/nodes/aliceVision folder
+
+For alternative methods, read the wiki
 
 
 **Software packages with Meshroom addons**
