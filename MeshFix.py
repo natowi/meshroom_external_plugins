@@ -10,10 +10,11 @@
 # Meshroom plugin license: Mozilla Public License Version 2.0
 # Plugin folder: meshroom\nodes\aliceVision
 # Requires MeshFix.exe in aliceVision\bin
-# Requires uncompiled Meshroom and pre-compiled alicevision
 
 # Option '-a' = joins multiple open components before starting
 # Option '-j' = output files in STL format insted of OFF
+
+# OFF or STL files can be converted using MeshSmith
 
 __version__ = "3.0"
 
