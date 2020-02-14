@@ -10,6 +10,8 @@ https://www.gcc.tu-darmstadt.de/media/gcc/code/mve-20160517-win64.zip
 
 https://github.com/simonfuhrmann/mve/wiki/Build-Instructions-for-Windows
 
+https://github.com/simonfuhrmann/mve/wiki/MVE-Users-Guide
+
 MVE SfM Reconstruction
 
 MVE Depth Map Reconstruction
