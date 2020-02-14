@@ -12,14 +12,18 @@ https://github.com/simonfuhrmann/mve/wiki/Build-Instructions-for-Windows
 
 https://github.com/simonfuhrmann/mve/wiki/MVE-Users-Guide
 
-MVE SfM Reconstruction
-
-MVE Depth Map Reconstruction
-
-MVE Scene to Pointset
 
 (also https://github.com/SamirAroudj/TSR)
 
+https://peterfalkingham.com/2016/10/14/photogrammetry-testing-5-mve-multiview-environment/
+
+https://informatik.hs-bremerhaven.de/dh2018/doku/02-Erstellung_MVE-Pipeline.html
+
+---
+
+Convert2MVE --> dmrecon --> scene2pset (PLY) [--> fssrecon --> meshclean]
+
+---
 
 # MVE Bundle to Pointset
 
