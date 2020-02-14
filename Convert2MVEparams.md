@@ -8,6 +8,8 @@ MVE Depth Map Reconstruction
 
 MVE Scene to Pointset
 
+(also https://github.com/SamirAroudj/TSR)
+
 
 # MVE Bundle to Pointset
 
