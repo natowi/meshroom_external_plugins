@@ -1,3 +1,5 @@
+# MR Sfm node -> convert2MVE
+
 __version__ = "1.1"
 
 from meshroom.core import desc
