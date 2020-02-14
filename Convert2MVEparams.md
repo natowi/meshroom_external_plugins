@@ -2,6 +2,12 @@ Preperation for node implementation
 
 [Convert2MVE]
 
+MVE 
+
+https://github.com/simonfuhrmann/mve
+
+https://www.gcc.tu-darmstadt.de/media/gcc/code/mve-20160517-win64.zip
+
 MVE SfM Reconstruction
 
 MVE Depth Map Reconstruction
