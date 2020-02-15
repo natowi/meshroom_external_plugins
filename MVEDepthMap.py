@@ -27,7 +27,7 @@ __version__ = "1.1"
 
 from meshroom.core import desc
 
-class MVE_DepthMap(desc.CommandLineNode):
+class MVEDepthMap(desc.CommandLineNode):
     commandLine = 'dmrecon {outputValue}'
 
     inputs = [
