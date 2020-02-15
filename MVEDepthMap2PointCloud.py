@@ -19,7 +19,7 @@ __version__ = "1.1"
 
 from meshroom.core import desc
 
-class MVE_DepthMap2PointCloud(desc.CommandLineNode):
+class MVEDepthMap2PointCloud(desc.CommandLineNode):
     commandLine = 'scene2pset {inputValue} {outputValue}'
 
     inputs = [
