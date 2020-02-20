@@ -1,5 +1,3 @@
-# computes structure from known poses (sfm file) to ply format. The output ply is not yet compatible with MR (?) but can be opened with Meshlab
-
 __version__ = "2.0"
 
 import json
