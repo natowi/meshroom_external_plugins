@@ -61,8 +61,8 @@ class StructureFromKnownPoses(desc.CommandLineNode):
         desc.File(
             name='output',
             label='Output Folder',
-            description='Output path for the sfm.ply',
-            value=desc.Node.internalFolder + 'sfm.ply',
+            description='Output path for the sfm.abc',
+            value=desc.Node.internalFolder + 'sfm.abc',
             uid=[],
         ),
 
