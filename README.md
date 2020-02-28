@@ -5,6 +5,10 @@ The Meshroom plugins are licensed under MPL-2.
 
 Tested on Windows only
 
+The nodes provided here should be considered _experimental_.
+
+For questions please open a new issue in this repository and _not in the official meshroom repository_
+
 **List of supported software packages:**
 
 - InstantMeshes (Implemented: smooth, crease, rosy, posy) https://github.com/wjakob/instant-meshes
