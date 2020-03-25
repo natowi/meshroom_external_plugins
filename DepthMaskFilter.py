@@ -1,6 +1,6 @@
 # Note: This node is outdated and archived as Meshroom python node example
 #
-# Install the following requirements:
+# Requirements:
 # enum34;python_version<"3.4"
 # PySide2==5.13.0
 # markdown==2.6.11
