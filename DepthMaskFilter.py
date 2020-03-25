@@ -14,6 +14,13 @@
 # 
 # This node includes the minor fix by tpontin https://github.com/alicevision/meshroom/pull/641#issuecomment-603876386
 # As this node was intended as Meshroom contribution, it is licensed under MPLv2
+# 
+# Node inputs:
+# Input: cameraInit.sfm for input image file names (.sfm only, no alembic)
+# Filtered Depth Maps Folder: depth maps folder output of DepthMaskFilter
+# Mask Folder: folder containing b/w mask .PNG images with the same names as the associated input files
+# The masks have to be rectified, so you cannot use your generated masks directly, but have to run them through a PrepareDenseScene node
+# (https://github.com/alicevision/meshroom/pull/641)
 #
 # See https://github.com/alicevision/meshroom/pull/708 for the latest DepthMaskFilter implementation in Meshroom
 
