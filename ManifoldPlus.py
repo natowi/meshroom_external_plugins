@@ -7,7 +7,7 @@ __version__ = "1.1"
 
 from meshroom.core import desc
 
-class manifold(desc.CommandLineNode):
+class ManifoldPlus(desc.CommandLineNode):
     commandLine = 'manifold --input {inputValue} --output {outputValue} --depth {depthValue}'
 
     inputs = [
@@ -27,13 +27,12 @@ class manifold(desc.CommandLineNode):
             uid=[0],
             advanced=True,
         ),
-		)
     ]
 
     outputs = [
         desc.File(
             name="output",
-            label="Output Folder",
+            label="Output",
             description="Output",
             value="",
             uid=[0],
