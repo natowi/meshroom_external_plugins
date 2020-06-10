@@ -34,7 +34,7 @@ class ManifoldPlus(desc.CommandLineNode):
             name="output",
             label="Output",
             description="Output",
-            value="",
+            value=desc.Node.internalFolder + 'manifold-output.obj',
             uid=[0],
             )
         ]
