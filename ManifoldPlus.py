@@ -23,7 +23,7 @@ class ManifoldPlus(desc.CommandLineNode):
             label='depth',
             description='''depth value''',
             value=8,
-            range=(0, 20, 1),
+            range=(0, 9, 1),
             uid=[0],
             advanced=True,
         ),
