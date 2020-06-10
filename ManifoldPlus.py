@@ -1,5 +1,5 @@
 # Manifold is distributed for free for non-commercial use only an is © 2020 Jingwei Huang. All Rights Reserved
-# Binaries can be downloaded from here https://github.com/natowi/ManifoldPlus/releases (rename manifold64.exe to manifold.exe)
+# Binaries can be downloaded from here https://github.com/natowi/ManifoldPlus/releases (rename manifoldplus64.exe to manifoldplus.exe)
 # The ManifoldPlus.py node for Meshroom is licensed under MPL2 by natowi
 
 
@@ -8,7 +8,7 @@ __version__ = "1.1"
 from meshroom.core import desc
 
 class ManifoldPlus(desc.CommandLineNode):
-    commandLine = 'manifold --input {inputValue} --output {outputValue} --depth {depthValue}'
+    commandLine = 'manifoldplus --input {inputValue} --output {outputValue} --depth {depthValue}'
 
     inputs = [
         desc.File(
