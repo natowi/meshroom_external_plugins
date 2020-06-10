@@ -1,5 +1,5 @@
 # Manifold is distributed for free for non-commercial use only an is © 2020 Jingwei Huang. All Rights Reserved
-# Binaries can be downloaded from here https://github.com/natowi/ManifoldPlus/releases
+# Binaries can be downloaded from here https://github.com/natowi/ManifoldPlus/releases (rename manifold64.exe to manifold.exe)
 # The ManifoldPlus.py node for Meshroom is licensed under MPL2 by natowi
 
 
