@@ -6,3 +6,27 @@ https://github.com/gvalvano/telegram-notification
 (https://github.com/alicevision/meshroom/issues/1166)
 
 reference https://github.com/alicevision/meshroom/blob/develop/meshroom/nodes/aliceVision/SketchfabUpload.py
+
+
+# python code
+import argparse
+import telegram
+
+from telegram.ext import Updater, CommandHandler
+
+# Parse command line arguments
+parser = argparse.ArgumentParser(description='Send a notification via Telegram')
+parser.add_argument('token', type=str, help='The token for your Telegram Bot')
+parser.add_argument('recipient', type=str, help='The recipient of the notification')
+parser.add_argument('subject', type=str, help='The subject of the notification')
+parser.add_argument('message', type=str, help='The message of the notification')
+args = parser.parse_args()
+
+# Create a Telegram Bot
+bot = telegram.Bot(token=args.token)
+
+# Send the notification
+bot.send_message(chat_id=args.recipient, text=args.message, disable_notification=True)
+
+# Run code
+# python send_notification.py YOUR_TELEGRAM_BOT_TOKEN RECIPIENT SUBJECT MESSAGE
