@@ -7,7 +7,7 @@ __version__ = "3.0"
 from meshroom.core import desc
 
 
-class InstantMeshes(desc.CommandLineNode):
+class gpx2exif(desc.CommandLineNode):
     commandLine = '{gpx2exifPathValue} image {gpxInputValue} {imageFolder} --delta {minutesValue}m{secondsValue}s'
 
     cpu = desc.Level.NORMAL
