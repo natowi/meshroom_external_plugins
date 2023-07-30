@@ -30,6 +30,14 @@ https://www.gcc.tu-darmstadt.de/home/proj/mve/
 - Convert2MVE convert Mesroom SfM to MVE data file format
 - MVEparams.md notes for node implementation
 
+https://github.com/joreeves/mr2nerf
+
+https://github.com/nicolalandro/DenseDepth
+
+https://github.com/mirkosprojects/MeshroomDFM
+
+https://github.com/SamMaoYS/arkit2meshroom
+
 **How to use the plugins:**
 
 The binary windows distribution of Meshroom can use uncompiled python source (*.py) files.
