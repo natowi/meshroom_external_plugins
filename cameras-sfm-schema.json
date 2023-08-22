@@ -1,0 +1,241 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "properties": {
+        "featuresFolders": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "intrinsics": {
+            "items": {
+                "properties": {
+                    "distortionParams": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array"
+                    },
+                    "height": {
+                        "type": "string"
+                    },
+                    "initializationMode": {
+                        "type": "string"
+                    },
+                    "intrinsicId": {
+                        "type": "string"
+                    },
+                    "locked": {
+                        "type": "string"
+                    },
+                    "principalPoint": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array"
+                    },
+                    "pxFocalLength": {
+                        "type": "string"
+                    },
+                    "pxInitialFocalLength": {
+                        "type": "string"
+                    },
+                    "sensorHeight": {
+                        "type": "string"
+                    },
+                    "sensorWidth": {
+                        "type": "string"
+                    },
+                    "serialNumber": {
+                        "type": "string"
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "width": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "distortionParams",
+                    "height",
+                    "initializationMode",
+                    "intrinsicId",
+                    "locked",
+                    "principalPoint",
+                    "pxFocalLength",
+                    "pxInitialFocalLength",
+                    "sensorHeight",
+                    "sensorWidth",
+                    "serialNumber",
+                    "type",
+                    "width"
+                ],
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "matchesFolders": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "poses": {
+            "items": {
+                "properties": {
+                    "pose": {
+                        "properties": {
+                            "locked": {
+                                "type": "string"
+                            },
+                            "transform": {
+                                "properties": {
+                                    "center": {
+                                        "items": {
+                                            "type": "string"
+                                        },
+                                        "type": "array"
+                                    },
+                                    "rotation": {
+                                        "items": {
+                                            "type": "string"
+                                        },
+                                        "type": "array"
+                                    }
+                                },
+                                "required": [
+                                    "center",
+                                    "rotation"
+                                ],
+                                "type": "object"
+                            }
+                        },
+                        "required": [
+                            "locked",
+                            "transform"
+                        ],
+                        "type": "object"
+                    },
+                    "poseId": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "pose",
+                    "poseId"
+                ],
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "version": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "views": {
+            "items": {
+                "properties": {
+                    "height": {
+                        "type": "string"
+                    },
+                    "intrinsicId": {
+                        "type": "string"
+                    },
+                    "metadata": {
+                        "properties": {
+                            "AliceVision:SensorWidth": {
+                                "type": "string"
+                            },
+                            "AliceVision:useWhiteBalance": {
+                                "type": "string"
+                            },
+                            "Exif:BodySerialNumber": {
+                                "type": "string"
+                            },
+                            "Exif:ColorSpace": {
+                                "type": "string"
+                            },
+                            "Exif:ExifVersion": {
+                                "type": "string"
+                            },
+                            "Exif:FlashPixVersion": {
+                                "type": "string"
+                            },
+                            "Exif:FocalLength": {
+                                "type": "string"
+                            },
+                            "Exif:ImageUniqueID": {
+                                "type": "string"
+                            },
+                            "jpeg:subsampling": {
+                                "type": "string"
+                            },
+                            "Make": {
+                                "type": "string"
+                            },
+                            "Model": {
+                                "type": "string"
+                            },
+                            "oiio:ColorSpace": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "AliceVision:SensorWidth",
+                            "AliceVision:useWhiteBalance",
+                            "Exif:BodySerialNumber",
+                            "Exif:ColorSpace",
+                            "Exif:ExifVersion",
+                            "Exif:FlashPixVersion",
+                            "Exif:FocalLength",
+                            "Exif:ImageUniqueID",
+                            "jpeg:subsampling",
+                            "Make",
+                            "Model",
+                            "oiio:ColorSpace"
+                        ],
+                        "type": "object"
+                    },
+                    "path": {
+                        "type": "string"
+                    },
+                    "poseId": {
+                        "type": "string"
+                    },
+                    "resectionId": {
+                        "type": "string"
+                    },
+                    "viewId": {
+                        "type": "string"
+                    },
+                    "width": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "height",
+                    "intrinsicId",
+                    "metadata",
+                    "path",
+                    "poseId",
+                    "viewId",
+                    "width"
+                ],
+                "type": "object"
+            },
+            "type": "array"
+        }
+    },
+    "required": [
+        "featuresFolders",
+        "intrinsics",
+        "matchesFolders",
+        "poses",
+        "version",
+        "views"
+    ],
+    "type": "object"
+}
